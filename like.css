@@ -1,0 +1,15 @@
+/* styles.css */
+.like-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#likeCount {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}

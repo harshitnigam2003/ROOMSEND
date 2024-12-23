@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script>
+
+        function loginopen() {
+
+            let username = document.getElementById("usernamee").value;
+            let password = document.getElementById("passwordd").value;
+
+            if (username === "ram" && password === "1234") {
+                window.location = 'album.html';
+            }
+
+            else {
+                alert('please enter write answer');
+            }
+
+
+        }
+
+
+
+    </script>
+     <style>
+        body
+        {
+          height: 700px;
+          display: flex;
+          justify-content:space-around;
+          align-items: center;
+          background-color: aliceblue ;
+          font-family: 'jost',sans-serif;
+        }
+        .log
+        {
+          width: 50%;
+          height: 500px;
+          /* background-color: #0f2753; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .logo
+        {
+          width: 5000px;
+        }
+        .form {
+          /* margin: 100px; */
+          width: 18%;
+          height: 300px;
+    background-color: rgb(15, 39, 83 );
+    padding: 3.125em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+  }
+  
+  .signup {
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 0.5em;
+  }
+  
+  .form--input {
+    width: 100%;
+    margin-bottom: 1.25em;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0.8em;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    outline: none;
+  }
+  
+  .form--input:focus {
+    border: 1px solid #639;
+    outline: none;
+  }
+  
+  .form--marketing {
+    display: flex;
+    margin-bottom: 1.25em;
+    align-items: center;
+  }
+  
+  .form--marketing > input {
+    margin-right: 0.625em;
+  }
+  
+  .form--marketing > label {
+    color: aliceblue;
+  }
+  
+  .checkbox, input[type="checkbox"] {
+    accent-color: #639;
+  }
+  
+  .form--submit {
+    width: 50%;
+    padding: 0.625em;
+    border-radius: 5px;
+    color: black;
+    background-color: aliceblue;
+    border: 1px dashed #639;
+    cursor: pointer;
+  }
+  
+  .form--submit:hover {
+    color: aliceblue;
+    background-color: #0f2753;
+    border: 1px dashed #639;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  </style>
+</head>
+
+<body>
+    <div class="log"><img class="logo" src="rentall.png" alt=""></div>
+    <form class="form">
+        <span class="signup">LOGIN</span>
+        <input type="email" placeholder="Email address" class="form--input">
+
+        <input type="password" placeholder="Password" class="form--input">
+
+
+        <div class="form--marketing">
+            <input id="okayToEmail" type="checkbox">
+            <label for="okayToEmail" class="checkbox">
+                Secure My Password
+            </label>
+        </div>
+        <button class="form--submit">
+            login
+        </button>
+</body>
+
+</html>
